@@ -14,9 +14,9 @@ $ docker run -p 80:80 -td conserto_chall
 
 $ docker ps
 CONTAINER ID        IMAGE               COMMAND                  CREATED             STATUS              PORTS                                        NAMES
-a13a00c28de5        conserto_chall      "apache2ctl -D FOREG…"   7 minutes ago       Up 7 minutes        0.0.0.0:80->80/tcp, 0.0.0.0:3306->3306/tcp   **laughing_cray**
+a13a00c28de5        conserto_chall      "apache2ctl -D FOREG…"   7 minutes ago       Up 7 minutes        0.0.0.0:80->80/tcp, 0.0.0.0:3306->3306/tcp   laughing_cray
 
-$ docker exec -ti **laughing_cray** bash
+$ docker exec -ti laughing_cray bash
 
 root@a13a00c28de5:/# mysql -u root
 ERROR 2002 (HY000): Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)
@@ -26,3 +26,7 @@ root@a13a00c28de5:/# service mysql restart
 
 (Press Ctrl+P and Ctrl+Q to exit docker image without killing it)
 ```
+
+- Finally just launch inside your web browser the ip adress of your virtual machine or your PC to access to hacking challenges (http://your.complete.ip.address)
+
+- Two challenges are not possible (lockpicking and the bomb as they need to be solved physically. They are both in miscellaneous section)
