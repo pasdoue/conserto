@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Spectrogram</title>
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+<body>
+  <h1>Spectrogram</h1>
+
+  <canvas id="canvas"></canvas>
+  <div>
+    <select id="select-song">
+      <option value="1">Ethos - Final Hope</option>
+      <option value="0">Aphex Twins - Equation</option>
+    </select>
+    <button id="btn-song" >Play song</button>
+  </div>
+
+  <script src="scripts/audiobuffer-slice.js"></script>
+  <script src="scripts/vendor/chroma.js"></script>
+  <script src="../spectrogram.js"></script>
+  <script src="scripts/main.js"></script>
+
+  
+</body>
+</html>
